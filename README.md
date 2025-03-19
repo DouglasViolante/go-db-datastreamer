@@ -2,6 +2,11 @@
 
 Small project the Streams Data that sends data to AWS Kinesis and move to AWS DynamoDB with a Lambda Function.
 
+## TODO
+
+- Lacks the Lambda Code to Inject and Insert data from Kinesis to DynamoDB.
+- Current code only Injects one json at the time each execution.
+
 ## Third Party Libs and Tools
 
 - [AWS SDK v2](https://aws.github.io/aws-sdk-go-v2/docs/)
@@ -13,6 +18,12 @@ Small project the Streams Data that sends data to AWS Kinesis and move to AWS Dy
 - Requires Docker!
 
 - Run the command ```docker-compose up --force-recreate --build``` in the same folder level as the file ```docker-compose.yml```
+
+- Create Terraform State Files (lock) First on a AWS S3 Bucket First!
+
+- Run the command ```tflocal init```, ```tflocal plan``` and ```tflocal apply```.
+
+- Execute the Code and Wait.
 
 ## Useful AWS CLI Commands
 
