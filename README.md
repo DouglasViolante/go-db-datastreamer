@@ -27,20 +27,20 @@ Small project the Streams Data that sends data to AWS Kinesis and move to AWS Dy
 
 ## Useful AWS CLI Commands
 
-awslocal kinesis create-stream --stream-name dev-player-rankings-stream --shard-count 1
+```awslocal kinesis create-stream --stream-name dev-player-rankings-stream --shard-count 1```
 
-awslocal kinesis describe-stream --stream-name dev-player-rankings-stream
+```awslocal kinesis describe-stream --stream-name dev-player-rankings-stream```
 
-awslocal s3api create-bucket --bucket my-terraform-state-bucket --region us-east-1
+```awslocal s3api create-bucket --bucket my-terraform-state-bucket --region us-east-1```
 
-awslocal s3api list-buckets --region us-east-1
+```awslocal s3api list-buckets --region us-east-1```
 
-awslocal s3 ls
+```awslocal s3 ls```
 
-awslocal dynamodb create-table --table-name my-terraform-lock --attribute-definitions AttributeName=LockID,AttributeType=S --key-schema AttributeName=LockID,KeyType=HASH --billing-mode PAY_PER_REQUEST
+```awslocal dynamodb create-table --table-name my-terraform-lock --attribute-definitions AttributeName=LockID,AttributeType=S --key-schema AttributeName=LockID,KeyType=HASH --billing-mode PAY_PER_REQUEST```
 
-awslocal dynamodb list-tables --region us-east-1
+```awslocal dynamodb list-tables --region us-east-1```
 
-aws --endpoint-url=http://localhost:4566 sts get-caller-identity --region us-east-1 --profile default
+```aws --endpoint-url=http://localhost:4566 sts get-caller-identity --region us-east-1 --profile default```
 
 
